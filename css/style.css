@@ -12,6 +12,10 @@ nav {
 	box-shadow: 0 0 3px #000;
 }
 
+ul {
+	display: flex;
+}
+
 .menu__logo {
 	padding-left: 2%;
     width: 6%;
@@ -20,6 +24,7 @@ nav {
 .menu__item {
 	margin: 0;
     padding: 0 2% 0 2%;
+	list-style-type: none;
     font-family: 'Manrope', sans-serif;
     font-size: 160%;
     color: #a1a1a1;
