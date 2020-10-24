@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 
+/* menu */
+
 body {
     margin: 0;
 }
@@ -67,3 +69,5 @@ nav {
 	padding-left: 5px;
 	border-left: 3px solid #ffb700;
 }
+
+/*auth*/
