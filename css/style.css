@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+	background-color: #7fb8f8;
 }
 
 nav {
@@ -77,6 +78,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	margin: 50px 15% 0 15%;
+	height: 400px;
 	background-color: #1c00ba;
 	border-radius: 15px;
 }
@@ -90,12 +92,38 @@ nav {
 	box-shadow: -10px -10px 0 #ff5900;
 }
 
-.auth-form__logo_orange {
-
+.auth-form__logo_blue {
+	background-color: #7600ff;
 }
 
 .auth-form__input-text {
-	margin: 5% 0 0 0;
-	padding: 10px;
+	padding: 15px;
 	width: 60%;
+	font-size: 130%;
+	font-family: 'Manrope', sans-serif;
+	border: 1px solid #fd5801;
+	border-radius: 30px;
+	outline: none;
+}
+
+.auth-form__input-text:focus {
+	box-shadow: 0 0 7px 0 #fdb601;
+}
+
+.auth-form__input-submit {
+	width: 25%;
+	height: 50px;
+	font-size: 140%;
+	color: #ffffff;
+	border-radius: 15px;
+	background-color: #fbbd02;
+	border: 2px solid #fd5801;
+}
+
+.auth-form__input-submit:hover {
+	cursor: pointer;
+}
+
+.auth-form__input-submit:active {
+	background-color: #ff4800;
 }
