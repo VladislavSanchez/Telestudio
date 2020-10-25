@@ -71,19 +71,31 @@ nav {
 
 /*auth*/
 
-.auth__form {
+.auth-form {
     display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	margin: 50px 15% 0 15%;
 	background-color: #1c00ba;
 	border-radius: 15px;
 }
 
-.auth__logo {
+.auth-form__logo {
 	padding: 1%;
 	font-family: 'Manrope', sans-serif;
 	font-size: 160%;
 	color: #ffffff;
 	background-color: #ffb700;
 	box-shadow: -10px -10px 0 #ff5900;
+}
+
+.auth-form__logo_orange {
+
+}
+
+.auth-form__input-text {
+	margin: 5% 0 0 0;
+	padding: 10px;
+	width: 60%;
 }
