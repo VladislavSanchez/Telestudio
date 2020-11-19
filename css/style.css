@@ -35,23 +35,30 @@ nav {
     color: #ffffff;
 }
 
-.menu__user-name {
+.menu__user {
+	align-items: center;
 	margin-right: 3%;
 	padding: 1%;
 	font-family: 'Manrope', sans-serif;
 	font-size: 100%;
 	background-color: #5E0DAC;
 	color: #ffffff;
+	outline: none;
+	border: none;
+}
+
+.menu__user:hover {
+	cursor: pointer;
 }
 
 .menu__user-icon {
-	padding-right: 1%;
 	width: 15px;
 }
 
 .menu__about-user {
     display: none;
 	position: absolute;
+	text-align: left;
 	padding: 2% 1% 2% 1%;
 	width: 145px;
 	font-family: 'Manrope', sans-serif;
@@ -60,7 +67,7 @@ nav {
 	background-color: #781ccd;
 }
 
-.menu__user-name:hover .menu__about-user {
+.menu__user_open {
 	display: block;
 }
 
