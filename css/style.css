@@ -7,37 +7,44 @@ body {
 	background-color: #7fb8f8;
 }
 
-nav {
-	width: 100%;
+.nav__menu {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 0;
+	margin: 0;
 	background-color: #1c00ba;
 	box-shadow: 0 0 3px #000;
+	z-index: 5;
+}
+
+.nav__menu li {
+	list-style: none;
 }
 
 .menu__logo {
-	margin-left: 5%;
-	padding: 1%;
+	width: 100%;
+	padding: 5%;
 	font-family: 'Manrope', sans-serif;
-	font-size: 120%;
+	font-size: 140%;
 	color: #ffffff;
 	background-color: #ffb700;
 	box-shadow: -10px -10px 0 #ff5900;
 }
 
 .menu__item {
-    padding: 1%;
 	list-style-type: none;
 	font-family: 'Manrope', sans-serif;
-    font-size: 140%;
+    font-size: 150%;
 	background-color: #ff4800;
     color: #ffffff;
 }
 
 .menu__user {
-	align-items: center;
-	margin-right: 3%;
+	width: 120%;
 	padding: 1%;
 	font-family: 'Manrope', sans-serif;
 	font-size: 100%;
@@ -51,6 +58,30 @@ nav {
 	cursor: pointer;
 }
 
+.menu__user-name::after {
+	content: " ";
+	width: 0;
+	height: 0;
+	position: relative;
+	top: -15px;
+	margin-left: 5px;
+	border-bottom: 10px solid #808080;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent
+}
+
+.menu__user-name-open::after {
+	content: " ";
+	width: 0;
+	height: 0;
+	position: relative;
+	top: 17px;
+	margin-left: 5px;
+	border-top: 10px solid #808080;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent
+}
+
 .menu__user-icon {
 	width: 15px;
 }
@@ -59,8 +90,9 @@ nav {
     display: none;
 	position: absolute;
 	text-align: left;
+	width: 130px;
+	margin: 0;
 	padding: 2% 1% 2% 1%;
-	width: 145px;
 	font-family: 'Manrope', sans-serif;
 	font-size: 80%;
 	list-style-type: none;
@@ -69,9 +101,20 @@ nav {
 
 .menu__user_open {
 	display: block;
+	animation: open 1s ease-in-out;
+	z-index: 4;
 }
 
-.menu__about-user-item {
+/*@keyframes open {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 75px;
+	}
+}*/
+
+.menu__about-user li {
 	margin: 2%;
 	padding-left: 5px;
 	border-left: 3px solid #ffb700;
