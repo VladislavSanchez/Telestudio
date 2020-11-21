@@ -13,9 +13,9 @@
 				<li><h3 class="menu__logo">Телестудия СЮТ</h3></li>
 				<li><h3 class="menu__item">РЕЙТИНГИ</h3></li>
 				<li>
-					<button class="menu__user">
+					<button class="menu__user" v-on:click="openFunction">
 					<p class="menu__user-name">Владислав Сынчез</p>
-					   <ul class="menu__about-user">
+					   <ul v-bind:class="{ menu__about-user: active }">
 						   <li><p>Статус: ученик</p></li>
 						   <li><p>Всего баллов: 7500</p></li>
 					   </ul>
@@ -26,6 +26,7 @@
 	</header>
     <main>
 	</main>
+<script src="../JS/vue.js"></script>
 <script src="../JS/aboutUser.js"></script>
 </body>
 </html>
