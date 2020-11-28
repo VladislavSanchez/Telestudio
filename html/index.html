@@ -10,23 +10,32 @@
 	<header>
 		<nav>
 			<ul class="nav__menu">
-				<li><h3 class="menu__logo">Телестудия СЮТ</h3></li>
-				<li><h3 class="menu__item">РЕЙТИНГИ</h3></li>
+				<li><p class="menu__logo">Телестудия СЮТ</p></li>
+				<li><p class="menu__title">РЕЙТИНГ</p></li>
 				<li>
-					<button class="menu__user" v-on:click="openFunction">
+					<div class="menu__user">
 					<p class="menu__user-name">Владислав Сынчез</p>
-					   <ul v-bind:class="{ menu__about-user: active }">
+					   <ul class="menu__about-user">
 						   <li><p>Статус: ученик</p></li>
 						   <li><p>Всего баллов: 7500</p></li>
 					   </ul>
-				   </button>
+				   </div>
 				</li>
 			</ul>
 		</nav>
 	</header>
     <main>
+		<section>
+			<ol class="rating">
+				<li class="rating__item">
+				<p>Владислав Сынчез</p>
+				<div class="rating__scale_conteiner">
+					<div class="rating__scale">9999</div>
+				</div>
+				</li>
+			</ol>
+		</section>
 	</main>
-<script src="../JS/vue.js"></script>
 <script src="../JS/aboutUser.js"></script>
 </body>
 </html>

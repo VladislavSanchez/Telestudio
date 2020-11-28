@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
-
-/* menu */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');/*меню*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');/* пункты*/
 
 body {
     margin: 0;
 	background-color: #7fb8f8;
 }
+
+/* menu */
 
 .nav__menu {
 	display: flex;
@@ -16,7 +17,7 @@ body {
 	top: 0;
 	padding: 0;
 	margin: 0;
-	background-color: #1c00ba;
+	background-color: #2f1cb0;
 	box-shadow: 0 0 3px #000;
 	z-index: 5;
 }
@@ -35,7 +36,8 @@ body {
 	box-shadow: -10px -10px 0 #ff5900;
 }
 
-.menu__item {
+.menu__title {
+	padding: 5px;
 	list-style-type: none;
 	font-family: 'Manrope', sans-serif;
     font-size: 150%;
@@ -44,6 +46,7 @@ body {
 }
 
 .menu__user {
+	text-align: center;
 	width: 120%;
 	padding: 1%;
 	font-family: 'Manrope', sans-serif;
@@ -67,7 +70,7 @@ body {
 	margin-left: 5px;
 	border-bottom: 10px solid #808080;
 	border-left: 5px solid transparent;
-	border-right: 5px solid transparent
+	border-right: 5px solid transparent;
 }
 
 .menu__user-name-open::after {
@@ -79,7 +82,7 @@ body {
 	margin-left: 5px;
 	border-top: 10px solid #808080;
 	border-left: 5px solid transparent;
-	border-right: 5px solid transparent
+	border-right: 5px solid transparent;
 }
 
 .menu__user-icon {
@@ -101,18 +104,19 @@ body {
 
 .menu__user_open {
 	display: block;
-	animation: open 1s ease-in-out;
-	z-index: 4;
+	animation: open 0.5s ease-in-out;
 }
 
-/*@keyframes open {
+@keyframes open {
 	0% {
-		top: 0px;
+		height: 0;
+		padding-top: 0;
+		overflow: hidden;
 	}
 	100% {
-		top: 75px;
+		height: 80%;
 	}
-}*/
+}
 
 .menu__about-user li {
 	margin: 2%;
@@ -120,20 +124,67 @@ body {
 	border-left: 3px solid #ffb700;
 }
 
+/*rating*/
+
+.rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+	padding: 0;
+}
+
+.rating__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	padding: 10px;
+	background-color: #1c72cd;
+}
+
+.rating__item p {
+	flex-basis: 15%;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+	color: #ffffff;
+}
+
+.rating__scale_conteiner {
+	flex-basis: 80%;
+	overflow: hidden;
+	background-color: #13559d;
+	border-radius: 20px;
+}
+
+.rating__scale {
+	width: 70%;
+	padding: 0 2px 0 0;
+	text-align: right;
+	font-family: 'Ubuntu', sans-serif;
+	color: #d78303;
+	background-color: #fdb601;
+	border-radius: 0 3px 3px 0;
+}
+
 /*auth*/
 
 .auth-form {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	margin: 50px 15% 0 15%;
 	height: 400px;
-	background-color: #1c00ba;
+	background-color: #361fbe;
 	border-radius: 15px;
 }
 
 .auth-form__logo {
+	margin: 0 5% 0 5%;
 	padding: 1%;
 	font-family: 'Manrope', sans-serif;
 	font-size: 160%;
@@ -142,22 +193,19 @@ body {
 	box-shadow: -10px -10px 0 #ff5900;
 }
 
-.auth-form__logo_blue {
-	background-color: #7600ff;
-}
-
 .auth-form__input-text {
-	padding: 15px;
-	width: 60%;
+	padding: 20px;
+	width: 70%;
 	font-size: 130%;
 	font-family: 'Manrope', sans-serif;
-	border: 1px solid #fd5801;
-	border-radius: 30px;
+	border: none;
+	border-radius: 35px;
 	outline: none;
 }
 
 .auth-form__input-text:focus {
-	box-shadow: 0 0 7px 0 #fdb601;
+	padding: 13px;
+	border: 2px solid #00a2ff;
 }
 
 .auth-form__input-submit {
@@ -167,13 +215,56 @@ body {
 	color: #ffffff;
 	border-radius: 15px;
 	background-color: #fbbd02;
-	border: 2px solid #fd5801;
+	border: none;
+	outline: none;
+}
+
+.auth-form__input-submit:focus {
+	box-shadow: 0 0 5px 2px #00a2ff;
+	transition: 0.1s;
 }
 
 .auth-form__input-submit:hover {
 	cursor: pointer;
+	box-shadow: 0 0 5px 2px #00a2ff;
+	transition: 0.2s;
 }
 
 .auth-form__input-submit:active {
 	background-color: #ff4800;
+}
+
+/*layout for smartphones*/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+
+	/*auth*/
+	.auth-form {
+		margin: 20px 0 0 0;
+		height: 500px;
+		border-radius: 20px 20px 0 0;
+	}
+
+	.auth-form__logo {
+		margin: 2%;
+		font-size: 170%;
+		background-color: #ff6300;
+		box-shadow: none;
+	}
+
+	.auth-form__input-text {
+		width: 80%;
+		padding: 30px;
+		font-size: 140%;
+		border-radius: 50px;
+	}
+
+	.auth-form__input-text:focus {
+		padding: 28px;
+	}
+
+	.auth-form__input-submit {
+		width: 50%;
+	}
 }
