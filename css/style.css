@@ -131,18 +131,24 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 120px;
 	padding: 0;
+}
+
+.rating__item:nth-child(2n) {
+	background-color: #1e7ce0;
 }
 
 .rating__item {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 80%;
+	width: 90%;
 	padding: 10px;
 	background-color: #1c72cd;
+	animation-name: appearance;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 }
 
 .rating__item p {
@@ -170,6 +176,16 @@ body {
 	border-radius: 0 3px 3px 0;
 }
 
+@keyframes appearance {
+	0% {
+		margin-top: -20px;
+		filter: opacity(50%);
+	}
+	100% {
+		margin-top: 0;
+		filter: opacity(100%);
+	}
+}
 /*auth*/
 
 .auth-form {
@@ -204,7 +220,7 @@ body {
 }
 
 .auth-form__input-text:focus {
-	padding: 13px;
+	padding: 18px;
 	border: 2px solid #00a2ff;
 }
 
@@ -232,6 +248,56 @@ body {
 
 .auth-form__input-submit:active {
 	background-color: #ff4800;
+}
+
+/*administration-panel*/
+
+.main__tools {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 120px;
+}
+
+.main__actions {
+	display: flex;
+	flex-basis: 40%;
+	flex-direction: column;
+	background-color: #4b42c5;
+	border: #fdb601 solid 2px;
+	border-radius: 10px;
+}
+
+.actions__list {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	list-style-type: none;
+}
+
+.actions__item button {
+	padding: 10px;
+	font-family: 'Manrope', sans-serif;
+	background-color: #ffffff;
+	border: #fdb601 solid 2px;
+	border-radius: 10px;
+}
+
+.actions__item button:hover {
+	cursor: pointer;
+	background-color: #bfb8c1
+}
+
+.actions__item button:active {
+	outline: none;
+}
+
+.actions__title {
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	color: #ffffff;
 }
 
 /*layout for smartphones*/
