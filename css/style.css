@@ -209,7 +209,7 @@ body {
 	box-shadow: -10px -10px 0 #ff5900;
 }
 
-.auth-form__input-text {
+input[type="email"], input[type="password"] {
 	padding: 20px;
 	width: 70%;
 	font-size: 130%;
@@ -219,12 +219,12 @@ body {
 	outline: none;
 }
 
-.auth-form__input-text:focus {
+input[type="email"]:focus, input[type="password"]:focus {
 	padding: 18px;
 	border: 2px solid #00a2ff;
 }
 
-.auth-form__input-submit {
+input[type="submit"] {
 	width: 25%;
 	height: 50px;
 	font-size: 140%;
@@ -235,18 +235,18 @@ body {
 	outline: none;
 }
 
-.auth-form__input-submit:focus {
+input[type="submit"]:focus {
 	box-shadow: 0 0 5px 2px #00a2ff;
 	transition: 0.1s;
 }
 
-.auth-form__input-submit:hover {
+input[type="submit"]:hover {
 	cursor: pointer;
 	box-shadow: 0 0 5px 2px #00a2ff;
 	transition: 0.2s;
 }
 
-.auth-form__input-submit:active {
+input[type="submit"]:active {
 	background-color: #ff4800;
 }
 
@@ -266,7 +266,6 @@ body {
 	flex-basis: 40%;
 	flex-direction: column;
 	background-color: #4b42c5;
-	border: #fdb601 solid 2px;
 	border-radius: 10px;
 }
 
@@ -275,19 +274,21 @@ body {
 	justify-content: space-around;
 	padding: 0;
 	list-style-type: none;
+
 }
 
 .actions__item button {
 	padding: 10px;
 	font-family: 'Manrope', sans-serif;
-	background-color: #ffffff;
-	border: #fdb601 solid 2px;
+	background-color: #fdb601;
+	color: #ffffff;
+	border: none;
 	border-radius: 10px;
 }
 
 .actions__item button:hover {
 	cursor: pointer;
-	background-color: #bfb8c1
+	background-color: #ba8600
 }
 
 .actions__item button:active {
@@ -300,12 +301,24 @@ body {
 	color: #ffffff;
 }
 
+.main__add-points {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #5E0DAC;
+	border: none;
+}
+
+.main__add-points h1 {
+	text-align: center;
+}
+
 /*layout for smartphones*/
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-
-
 	/*auth*/
+
 	.auth-form {
 		margin: 20px 0 0 0;
 		height: 500px;
