@@ -6,4 +6,4 @@ userMenu.addEventListener('click', function () {
     userItem.classList.toggle('menu__user_open');
     userName.classList.toggle('menu__user-name-open');
     userName.classList.toggle('menu__user-name');
-})
+});
