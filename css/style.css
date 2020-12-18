@@ -200,36 +200,62 @@ body {
 }
 
 .auth-form__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 	height: 20vh;
 	width: 40vw;
+    background-color: #2f1cb0;
 }
 
-.auth-form__logo p {
+.logo__text {
+    position: absolute;
 	display: inline;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 	background-color: #4720ab;
 }
 
 .logo_container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
 }
 
-.logo_container p:nth-child(1) {
+.logo_container p {
 	position: relative;
 	padding: 1vw;
-	font-size: 4vw;
+	font-size: 2vw;
 	font-family: 'Jost', sans-serif;
 	background-color: #fddd54;
 }
 
+.logo_container::after {
+    content: "online";
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 3vw;
+    left: -2vw;
+    margin: 0;
+    font-size: 1.5vw;
+    transform: rotate(90deg);
+    background-color: #faaf16;
+
+}
+
 .logo_container p:nth-child(2) {
+    position: relative;
 	display: block;
-	transform: rotate(90deg);
+    height: 100%;
 	margin: 0;
 	padding: 0 1vw 0 1vw;
-	font-size: 2vw;
+	font-size: 1.5vw;
+    transform: rotate(90deg);
 	background-color: #faaf16;
 }
 
