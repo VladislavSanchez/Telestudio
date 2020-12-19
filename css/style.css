@@ -268,7 +268,7 @@ body {
     content: "Web-project";
     position: absolute;
     display: inline;
-    margin: 0 0 7vw 0;
+    margin: 0 0 7.2vw 0;
     padding: 0.3vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4vw;
@@ -284,8 +284,8 @@ body {
     align-self: center;
     text-align: center;
     width: 4.9vw;
-    margin: 0 0 0 14.8vw;
-    font-size: 1.3vw;
+    margin: 0 1vw 0 14.8vw;
+    font-size: 1vw;
     font-family: 'Montserrat', sans-serif;
     transform: rotate(90deg);
     background-color: #faaf16;
@@ -483,7 +483,7 @@ input[type="submit"]:active {
 
     .logo_container::after {
         width: 19.6vw;
-        margin: 0 0 0.4vw 59.2vw;
+        margin: 0 0 0 59.2vw;
         font-size: 5.2vw;
     }
 
