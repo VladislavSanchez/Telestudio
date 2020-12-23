@@ -224,7 +224,7 @@ body {
 	font-family: 'Ubuntu', sans-serif;
     font-size: 1.5vw;
 	color: #d78303;
-	background-color: #2b2b2c;
+	background-color: #f1c013;
 	border-radius: 0 3px 3px 0;
 }
 
@@ -268,7 +268,7 @@ body {
     content: "Web-project";
     position: absolute;
     display: inline;
-    margin: 0 0 7vw 0;
+    margin: 0 0 7.5vw 0;
     padding: 0.3vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4vw;
@@ -283,7 +283,7 @@ body {
     display: block;
     align-self: center;
     text-align: center;
-    width: 4.9vw;
+    width: 4.99vw;
     margin: 0 0 0 14.8vw;
     font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
@@ -482,7 +482,7 @@ input[type="submit"]:active {
     }
 
     .logo_container::after {
-        width: 19.6vw;
+        width: 19.55vw;
         margin: 0 0 0 59.2vw;
         font-size: 5.2vw;
     }
