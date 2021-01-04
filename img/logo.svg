@@ -1,0 +1,20 @@
+<svg width="334" height="112.00000000000001" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="114" width="336" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#000" id="svg_9" height="75.953635" width="33.872676" y="35.502763" x="297.90393" stroke-opacity="null" stroke-width="0" fill="#faaf16"/>
+  <rect stroke="#000" id="svg_3" height="35.457373" width="178.631833" y="1.525083" x="0.753971" stroke-opacity="null" stroke-width="0" fill="#4720ab"/>
+  <rect stroke="#000" id="svg_2" height="76.000003" width="306.981848" y="35.47958" x="-8.752509" stroke-width="0" fill="#fddd54"/>
+  <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(0.8187100912238483,0,0,0.8593119978904722,-12.309390448824356,5.490606520176697) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="43" id="svg_1" y="94.807755" x="36.276762" stroke-width="0" fill="#000000">Телестудия СЮТ</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="26" id="svg_4" y="28.587507" x="10.142343" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff">web-progect_</text>
+  <text transform="rotate(90 314.8413391113282,73.81147766113284) " stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="24" id="svg_7" y="82.311824" x="281.787132" stroke-opacity="null" stroke-width="0" fill="#000000">online</text>
+ </g>
+</svg>
