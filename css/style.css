@@ -30,7 +30,7 @@ body {
 
 /* menu */
 
-.nav__menu {
+.menu {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -45,11 +45,11 @@ body {
 	z-index: 5;
 }
 
-.nav__menu li {
+.menu li {
 	list-style: none;
 }
 
-.nav__logo {
+.menu__logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body {
     margin: 1.3vw 0 0 0;
 }
 
-.logo_container-index {
+.menu__logo-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -66,14 +66,14 @@ body {
     padding: 0;
 }
 
-.logo_container-index p {
+.menu__logo-container p {
     padding: 1vw;
     font-size: 2vw;
     font-family: 'Jost', sans-serif;
     background-color: #fddd54;
 }
 
-.logo_container-index::before {
+.menu__logo-container::before {
     content: "Web-project";
     position: absolute;
     display: inline;
@@ -86,14 +86,12 @@ body {
     background-color: #4720ab;
 }
 
-.logo_container-index::after {
+.menu__logo-container::after {
     content: "online";
     position: absolute;
-    display: block;
-    align-self: center;
     text-align: center;
-    width: 4.85vw;
-    margin: 0 0 0 14.8vw;
+    width: 4.86vw;
+    margin: 0.02vw 0 0 14.8vw;
     font-size: 1.3vw;
     font-family: 'Montserrat', sans-serif;
     transform: rotate(90deg);
@@ -210,7 +208,7 @@ body {
 	color: #ffffff;
 }
 
-.rating__scale_conteiner {
+.rating__scale-conteiner {
 	flex-basis: 80%;
 	overflow: hidden;
 	background-color: #13559d;
@@ -230,7 +228,7 @@ body {
 
 /*auth*/
 
-.auth-form {
+.form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -241,14 +239,14 @@ body {
 	border-radius: 15px;
 }
 
-.auth-form__logo {
+.form__logo {
     display: flex;
     justify-content: center;
     align-items: center;
 	height: 9vh;
 }
 
-.logo_container {
+.form__logo-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -257,14 +255,14 @@ body {
     padding: 0;
 }
 
-.logo_container p {
+.form__logo-container p {
     padding: 1vw;
     font-size: 2vw;
     font-family: 'Jost', sans-serif;
     background-color: #fddd54;
 }
 
-.logo_container::before {
+.form__logo-container::before {
     content: "Web-project";
     position: absolute;
     display: inline;
@@ -277,7 +275,7 @@ body {
     background-color: #4720ab;
 }
 
-.logo_container::after {
+.form__logo-container::after {
     content: "online";
     position: absolute;
     display: block;
@@ -292,7 +290,7 @@ body {
 }
 
 
-.input-container {
+.form__input-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -346,7 +344,7 @@ input[type="submit"]:active {
 
 /*administration-panel*/
 
-.main__tools {
+.panel {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -355,7 +353,7 @@ input[type="submit"]:active {
 	margin-top: 10vw;
 }
 
-.main__actions {
+.actions {
 	display: flex;
 	flex-direction: column;
     justify-content: space-around;
@@ -363,6 +361,12 @@ input[type="submit"]:active {
     width: 90%;
 	background-color: #4b42c5;
 	border-radius: 10px;
+}
+
+.actions__title {
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	color: #ffffff;
 }
 
 .actions__list {
@@ -378,13 +382,51 @@ input[type="submit"]:active {
 }
 
 .actions__item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-	margin: 2% 0 2% 0;
+	width: 80%;
 }
 
-.actions__item button {
+.action__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	top: 0;
+	margin-bottom:1vw;
+	font-family: 'Manrope', sans-serif;
+	color: #ffffff;
+	background-color: #5E0DAC;
+	border: none;
+	border-radius: 20px;
+}
+
+.action__form h1 {
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	color: #ffffff;
+}
+
+.action__form select {
+	padding: 8px;
+	font-size: 1.5vw;
+	border-radius: 10px;
+}
+
+.action__form input[type="text"] {
+	padding: 8px;
+	font-size: 1.5vw;
+	border-radius: 10px;
+	border: none;
+}
+
+.actions__input-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+	margin: 1% 0 1% 0;
+}
+
+.actions__input-container button {
 	padding: 10px;
 	font-family: 'Manrope', sans-serif;
 	background-color: #fdb601;
@@ -393,61 +435,13 @@ input[type="submit"]:active {
 	border-radius: 10px;
 }
 
-.actions__item button:hover {
+.actions__input-container button:hover {
 	cursor: pointer;
 	background-color: #ba8600
 }
 
-.actions__item button:active {
+.actions__input-container button:active {
 	outline: none;
-}
-
-.actions__title {
-	text-align: center;
-	font-family: 'Manrope', sans-serif;
-	color: #ffffff;
-}
-
-.main__popup {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	width: 80%;
-	top: 0;
-	background-color: #5E0DAC;
-	border: none;
-	border-radius: 20px;
-}
-
-.main__popup h1 {
-	text-align: center;
-	font-family: 'Manrope', sans-serif;
-	color: #ffffff;
-}
-
-.add-points__item {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	margin-bottom: 10px;
-	font-family: 'Manrope', sans-serif;
-	color: #ffffff;
-}
-
-.add-points__item select {
-	padding: 8px;
-	font-size: 1.5vw;
-	border-radius: 10px;
-}
-
-.add-points__item input[type="text"] {
-	padding: 8px;
-	font-size: 1.5vw;
-	border-radius: 10px;
-	border: none;
 }
 
 /*layout for smartphones*/
@@ -455,39 +449,40 @@ input[type="submit"]:active {
 @media screen and (max-width: 980px) {
 	/*auth*/
 
-	.auth-form {
-        height: 70vh;
+	.form {
+		position: relative;
+		height: 90vh;
         margin: 15vh 0 15vh 0;
 		border-radius: 20px 20px 20px 20px;
 	}
 
-    .auth-form__logo {
+    .form__logo {
         height: 18vh;
     }
 
-    .logo_container {
+    .form__logo-container {
         width: 72vw;
         max-height: 100%;
     }
 
-    .logo_container p {
+    .form__logo-container p {
         padding: 4vw;
         font-size: 8vw;
     }
 
-    .logo_container::before {
+    .form__logo-container::before {
         margin: 0 0 28vw 0;
         padding: 0.6vw;
         font-size: 5.6vw;
     }
 
-    .logo_container::after {
+    .form__logo-container::after {
         width: 19.55vw;
         margin: 0 0 0 59.2vw;
         font-size: 5.2vw;
     }
 
-    .input-container {
+    .form__input-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -15,33 +15,37 @@
    </nav>
 </header>
 <main>
-    <section class="main__tools">
-        <div class="main__actions">
-            <h2 class="actions__title">Что вы хотите?</h2>
+    <section class="panel">
+        <div class="actions">
+            <h1 class="actions__title">Что вы хотите?</h1>
             <ul class="actions__list">
                 <li class="actions__item">
-                    <form class="main__popup" action="" method="post">
+                    <form class="action__form" action="" method="post">
                         <h1>Добавить баллы</h1>
-                        <div class="add-points__item">
-                            <label for="user"><select name="user">
-                                <option>Выберите пользователя</option>
-                                <option>user</option>
-                            </select></label>
+                        <div class="actions__input-container">
+                            <label for="user">
+                                <select name="user">
+                                    <option>Выберите пользователя</option>
+                                    <option>user</option>
+                                </select>
+                            </label>
                             <label for="text"><input name="text" type="text" placeholder="Введите кол-во баллов"></label>
                             <input type="submit" value="Добавить">
                         </div>
                     </form>
                 </li>
                 <li class="actions__item">
-                    <form class="main__popup" action="" method="post">
-                        <h1>Своровать баллы</h1>
-                        <div class="add-points__item">
-                            <label for="user"><select name="user">
-                                <option>Выберите пользователя</option>
-                                <option>user</option>
-                            </select></label>
+                    <form class="action__form" action="" method="post">
+                        <h1>Украсть баллы</h1>
+                        <div class="actions__input-container">
+                            <label for="user">
+                                <select name="user">
+                                    <option>Выберите пользователя</option>
+                                    <option>user</option>
+                                </select>
+                            </label>
                             <label for="text"><input name="text" type="text" placeholder="Введите кол-во баллов"></label>
-                            <input type="submit" value="Украсть">
+                            <input type="submit" value="Снять">
                         </div>
                     </form>
                 </li>
@@ -52,6 +56,5 @@
 <footer>
 
 </footer>
-<script src="../JS/popumPoints.js"></script>
 </body>
 </html>
