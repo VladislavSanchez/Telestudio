@@ -365,7 +365,7 @@ body {
 		height: 100%;
         margin: 0;
 		padding: 7% 0 7% 0;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 3vw 3vw;
 	}
 
     .authorization__logo {
@@ -383,14 +383,21 @@ body {
 	.authorization__email-input, .authorization__password-input  {
 		width: 80vw;
 		margin: 6% 0 6% 0;;
-		padding:  2.5vh;
+		padding:  4vw;
 		font-size: 4.5vw;
-		border-radius: 50px;
+		border-radius: 6vw;
 	}
 
 	.authorization__email-input:focus, .authorization__password-input:focus {
-		padding: 2.6vh;
-        font-size: 5vw;
+		font-size: 4.5vw;
+		background-color: #ffefc0;
+		border: none;
+		border-radius: 0 6vw 6vw 0;
+	}
+
+	.authorization__email-input:invalid, .authorization__password-input:invalid{
+		border-radius: 0 6vw 6vw 0;
+		border-left: 2vw solid #ff0000;
 	}
 
 	.authorization__submit-input {
