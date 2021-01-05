@@ -359,7 +359,7 @@ input[type="submit"]:active {
 	/*auth*/
 
 	.authorization {
-        height: 100vw;
+        height: calc(100vw + 100%);
         margin: 0 0 0 0;
         border-radius: 20px 20px 20px 20px;
 	}
