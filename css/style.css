@@ -22,9 +22,12 @@
 	}
 }
 
+html {
+	margin: 0;
+}
 
 body {
-    margin: 0;
+	margin: 0;
 	background-color: #7fb8f8;
 }
 
@@ -186,7 +189,7 @@ body {
 	border-radius: 0 3px 3px 0;
 }
 
-/*auth*/
+/*authorization*/
 
 .authorization {
     display: flex;
@@ -194,7 +197,7 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 50vh;
-    margin: 10vh 20% 0 20%;
+    margin: 10vh 20vw 0 20vw;
     background-color: #361fbe;
     border-radius: 15px;
 }
@@ -207,7 +210,7 @@ body {
     height: 45%;
 }
 
-input[type="email"], input[type="password"] {
+.authorization__email-input, .authorization__password-input {
 	padding: 1.2vw;
 	width: 50vw;
 	font-size: 1.4vw;
@@ -217,14 +220,14 @@ input[type="email"], input[type="password"] {
 	outline: none;
 }
 
-input[type="email"]:focus, input[type="password"]:focus {
+.authorization__email-input:focus, .authorization__password-input:focus {
     font-size: 1.7vw;
     background-color: #fcffe6;
 	border: 2px solid #00a2ff;
     transition: 0.2s;
 }
 
-input[type="submit"] {
+.authorization__submit-input {
 	width: 25%;
 	height: 50px;
 	font-size: 2vw;
@@ -236,18 +239,18 @@ input[type="submit"] {
 	outline: none;
 }
 
-input[type="submit"]:focus {
+.authorization__submit-input:focus {
 	box-shadow: 0 0 5px 2px #00a2ff;
 	transition: 0.1s;
 }
 
-input[type="submit"]:hover {
+.authorization__submit-input:hover {
 	cursor: pointer;
 	box-shadow: 0 0 5px 2px #00a2ff;
 	transition: 0.2s;
 }
 
-input[type="submit"]:active {
+.authorization__submit-input:active {
 	background-color: #ff4800;
 }
 
@@ -359,9 +362,10 @@ input[type="submit"]:active {
 	/*auth*/
 
 	.authorization {
-        height: calc(100vw + 100%);
-        margin: 0 0 0 0;
-        border-radius: 20px 20px 20px 20px;
+		height: 100%;
+        margin: 0;
+		padding: 7% 0 7% 0;
+        border-radius: 0 0 20px 20px;
 	}
 
     .authorization__logo {
@@ -372,22 +376,24 @@ input[type="submit"]:active {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 30%;
+        height: 100%;
+		padding: 10% 0 10% 0;
     }
 
-	input[type="email"], input[type="password"]  {
+	.authorization__email-input, .authorization__password-input  {
 		width: 80vw;
+		margin: 6% 0 6% 0;;
 		padding:  2.5vh;
 		font-size: 4.5vw;
 		border-radius: 50px;
 	}
 
-	input[type="email"]:focus, input[type="password"]:focus {
+	.authorization__email-input:focus, .authorization__password-input:focus {
 		padding: 2.6vh;
         font-size: 5vw;
 	}
 
-	input[type="submit"] {
+	.authorization__submit-input {
 		width: 70vw;
 		height: 13vw;
 		font-size: 9vw;
