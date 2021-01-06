@@ -396,11 +396,11 @@ body {
 
 	.authorization__email-input:focus, .authorization__password-input:focus {
 		font-size: 4.5vw;
-		background-color: #f2ddff;
 		border: none;
+		box-shadow: 0 0 0 0.5vw #fdb601;
 	}
 
-	.authorization__email-input:invalid, .authorization__password-input:invalid{
+	.authorization__email-input:invalid, .authorization__password-input:invalid {
 		border-radius: 0 6vw 6vw 0;
 		border-left: 2vw solid #ff0000;
 	}
