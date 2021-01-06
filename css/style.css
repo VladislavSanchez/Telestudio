@@ -123,48 +123,46 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 10vw;
-	padding: 0;
-}
-
-.rating__item:nth-child(2n) {
-	background-color: #1e7ce0;
+	width: 100%;
+	margin-top: 10vw;;
 }
 
 .rating__item {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 90%;
-	padding: 1vw;
-	background-color: #1c72cd;
-	animation: ease-in-out 1s appearance;
-}
-
-.rating__item p {
-	flex-basis: 15%;
+	width: 90vw;
+	padding: 2vw;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 1.3vw;
 	color: #ffffff;
+	background-color: #1c72cd;
+	animation: ease-in-out 1s appearance;
+}
+
+.rating__item:nth-child(2n) {
+	background-color: #1e7ce0;
 }
 
 .rating__scale-conteiner {
 	flex-basis: 80%;
+	padding: 0;
 	overflow: hidden;
 	background-color: #13559d;
-	border-radius: 20px;
+	border-radius: 4vw;
 }
 
 .rating__scale {
-	width: 70%;
-	padding: 0 0.3vw 0 0;
+	width: 5%;
+	margin: 0;
+	padding: 0 1vw 0 0;
 	text-align: right;
 	font-family: 'Ubuntu', sans-serif;
     font-size: 1.5vw;
 	color: #d78303;
 	background-color: #f1c013;
-	border-radius: 0 3px 3px 0;
+	border-radius: 1.5vw;
 }
 
 /*authorization*/
@@ -342,7 +340,7 @@ body {
 
 @keyframes appearance {
 	0% {
-		margin-top: -20px;
+		margin-top: -1vh;
 		filter: opacity(50%);
 	}
 	100% {
