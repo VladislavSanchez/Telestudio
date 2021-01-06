@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Manrope:wght@600&family=Montserrat:wght@500&family=Roboto:wght@100&family=Ubuntu:wght@500&display=swap');
 
-@keyframes appearance {
-	0% {
-		margin-top: -20px;
-		filter: opacity(50%);
-	}
-	100% {
-		margin-top: 0;
-		filter: opacity(100%);
-	}
-}
-
-@keyframes open {
-	0% {
-		height: 0;
-		padding-top: 0;
-		overflow: hidden;
-	}
-	100% {
-		height: 6.8vw;
-	}
-}
-
 html {
 	margin: 0;
 }
@@ -227,6 +205,12 @@ body {
     transition: 0.2s;
 }
 
+.authorization__email-input:invalid, .authorization__password-input:invalid{
+	color: #ff0000;
+	border-radius: 0 2vw 2vw 0;
+	border-left: 0.2vw solid #ff0000;
+}
+
 .authorization__submit-input {
 	width: 25%;
 	height: 50px;
@@ -356,6 +340,28 @@ body {
 	outline: none;
 }
 
+@keyframes appearance {
+	0% {
+		margin-top: -20px;
+		filter: opacity(50%);
+	}
+	100% {
+		margin-top: 0;
+		filter: opacity(100%);
+	}
+}
+
+@keyframes open {
+	0% {
+		height: 0;
+		padding-top: 0;
+		overflow: hidden;
+	}
+	100% {
+		height: 6.8vw;
+	}
+}
+
 /*layout for smartphones*/
 
 @media screen and (max-width: 980px) {
@@ -390,9 +396,8 @@ body {
 
 	.authorization__email-input:focus, .authorization__password-input:focus {
 		font-size: 4.5vw;
-		background-color: #ffefc0;
+		background-color: #f2ddff;
 		border: none;
-		border-radius: 0 6vw 6vw 0;
 	}
 
 	.authorization__email-input:invalid, .authorization__password-input:invalid{
