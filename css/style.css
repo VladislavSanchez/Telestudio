@@ -36,7 +36,7 @@ body {
 }
 
 .menu__logo {
-	width: 100%;
+	width: 80%;
 }
 
 .menu__title {
@@ -64,7 +64,7 @@ body {
 	cursor: pointer;
 }
 
-.menu__user-name::after {
+.menu__user-name-marker--close::after {
     content: " ";
     width: 0;
     height: 0;
@@ -76,7 +76,7 @@ body {
     border-right: 0.5vw solid transparent;
 }
 
-.menu__user-name-open::after {
+.menu__user-name-marker--open::after {
     content: " ";
     width: 0;
     height: 0;
@@ -88,11 +88,7 @@ body {
     border-right: 0.5vw solid transparent;
 }
 
-.menu__user-icon {
-	width: 15px;
-}
-
-.menu__about-user {
+.menu__about-user-progress {
     display: none;
 	position: absolute;
 	text-align: left;
@@ -105,12 +101,12 @@ body {
 	background-color: #781ccd;
 }
 
-.menu__user_open {
+.menu__about-user-progress--open {
 	display: block;
 	animation: open 0.5s ease-in-out;
 }
 
-.menu__about-user li {
+.menu__about-user-item {
 	margin: 2%;
 	padding-left: 5px;
 	border-left: 3px solid #ffb700;
@@ -143,6 +139,11 @@ body {
 
 .rating__item:nth-child(2n) {
 	background-color: #1e7ce0;
+}
+
+.rating__name {
+	flex-basis: 20%;
+	overflow: hidden;
 }
 
 .rating__scale-conteiner {
@@ -205,8 +206,8 @@ body {
 
 .authorization__email-input:invalid, .authorization__password-input:invalid{
 	color: #ff0000;
-	border-radius: 0 2vw 2vw 0;
-	border-left: 0.2vw solid #ff0000;
+	border: none;
+	box-shadow: 0 0 0.3vw 0.3vw #ff3333;
 }
 
 .authorization__submit-input {
@@ -401,6 +402,7 @@ body {
 	.authorization__email-input:invalid, .authorization__password-input:invalid {
 		border-radius: 0 6vw 6vw 0;
 		border-left: 2vw solid #ff0000;
+		box-shadow: none;
 	}
 
 	.authorization__submit-input {
