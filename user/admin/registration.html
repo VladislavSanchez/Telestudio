@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Регистрация | Телестудия СЮТ</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+    <form action="../php-handlers/reg.php" class="registration-form" method="post">
+        <img alt="logo" class="registration-for__logo" src="/img/logo.svg">
+        <div class="registration-form__input-container">
+            <label class="registration-form__label"><span>Введите имя и фамилию<sup>*</sup></span><input class="registration-form__name-input" maxlength="50" name="name" placeholder="ИФ" required type="text"></label>
+            <label class="registration-form__label"><span>Введите адрес эл. почты<sup>*</sup></span><input class="registration-form__email-input" maxlength="30" name="email" placeholder="Email" required type="text"></label>
+            <label class="registration-form__label"><span>Придумайте пароль<sup>*</sup></span><input class="registration-form__password-input" maxlength="20" name="password" placeholder="Password" required type="password"></label>
+        </div>
+        <input class="registration-form__submit-input" type="submit">
+    </form>
+</main>
+</body>
+</html>

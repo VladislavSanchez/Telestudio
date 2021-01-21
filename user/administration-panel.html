@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Панель администратора</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li class="menu__item">
+                <img alt="logo" class="menu__logo" src="../img/logo.svg" width="20%">
+            </li>
+            <li class="menu__item">
+                <a class="menu__title">Управление</a>
+            </li>
+            <li class="menu__item">
+                <div class="menu__user">
+                    <p class="menu__user-name menu__user-name-marker--close"><?php echo $_SESSION['user_name']; ?></p>
+                    <ul class="menu__about-user-progress">
+                        <li class="menu__about-user-item"><h2><?php echo $_SESSION['user_name']; ?></h2></li>
+                        <li class="menu__about-user-item"><p>Статус: <?php echo $_SESSION['user_status']; ?></p></li>
+                        <li class="menu__about-user-item"><p>Всего баллов: <?php echo $_SESSION['user_points']; ?></p></li>
+                        <li class="menu__about-user-item">
+                            <a  class="menu__about-user-link" href="php-handlers/logout.php">Выход</a>
+                            <button class="menu__button">Закрыть</button>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="panel">
+        <div class="actions">
+            <h1 class="actions__title">Что вы хотите?</h1>
+            <ul class="actions__list">
+                <li class="actions__item">
+                    <button class="actions__add-points" type="button">Добавить баллы</button>
+                </li>
+                <li class="actions__item">
+                    <button class="actions__clear-points" type="button">Снять баллы</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <form action="" class="actions__form-add" method="post">
+        <h1>Украсть баллы</h1>
+        <div class="actions__input-container">
+            <label>
+                <select class="actions__select" name="user">
+                    <option>Выберите пользователя</option>
+                    <option>user</option>
+                </select>
+            </label>
+            <label><input class="actions__input" name="text" placeholder="Введите кол-во баллов" type="text"></label>
+            <input class="actions__submit" type="submit" value="Снять">
+        </div>
+    </form>
+</footer>
+<script src="../js/adminItemOpen.js"></script>
+</body>
+</html>

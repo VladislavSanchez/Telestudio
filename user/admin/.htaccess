@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Adm-function"
+require valid-user
+AuthUserFile "/home/v78104/.htpasswds/public_html/t-sut.ru/user/admin/passwd"
